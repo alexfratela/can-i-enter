@@ -1,0 +1,8 @@
+{
+  "name": "Solo builder, Italy",
+  "country": "Italy",
+  "age": 40,
+  "student": false,
+  "hardware": ["laptop"],
+  "hoursPerWeek": 8
+}
