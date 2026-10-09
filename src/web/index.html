@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can I Enter?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Can I Enter?</h1>
+  <p class="sub">Paste a hackathon's Official Rules and find out whether <em>you</em> are allowed
+     to enter &mdash; quoting the rules back at you, sentence by sentence.</p>
+
+  <form id="profile">
+    <fieldset>
+      <legend>Your profile</legend>
+      <div class="row">
+        <label>Country of residence <input name="country" value="Italy" autocomplete="country-name"></label>
+        <label>Age <input name="age" type="number" min="1" max="120" value="40"></label>
+        <label>Student?
+          <select name="student"><option value="no" selected>no</option><option value="yes">yes</option></select>
+        </label>
+        <label>Hardware you own <input name="hardware" value="laptop"></label>
+        <label>Hours a week <input name="hours" type="number" min="1" max="80" value="8"></label>
+        <label>Today <input name="today" type="date"></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <h2>Rules pages on file</h2>
+  <ul class="sources" id="sources"></ul>
+
+  <div class="live">
+    <input id="url" type="url" placeholder="…or paste any other rules URL">
+    <button id="check-url" type="button">Check</button>
+  </div>
+
+  <h2>Verdict</h2>
+  <div id="out"><p class="sub">Pick a hackathon above and press Check.</p></div>
+
+  <footer>
+    This quotes a document. It is not legal advice, and it never answers what the rules do
+    not say. Quotes are shown with the date the page was read.
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
